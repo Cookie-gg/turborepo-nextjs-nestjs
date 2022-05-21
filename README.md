@@ -1,6 +1,6 @@
-# Turborepo starter
+# Turborepo starter with Next.js and NestJS
 
-This is an official Yarn v1 starter turborepo.
+This is a Yarn v1 starter turborepo with Next.js and NestJS.
 
 ## What's inside?
 
@@ -8,11 +8,10 @@ This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package ma
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org) app
+- `api`: a [NestJS](https://nestjs.com/) app cloned from [nestjs-zod-swagger](https://github.com/Cookie-gg/nestjs-zod-swagger/tree/monorepo)
 - `web`: another [Next.js](https://nextjs.org) app
 - `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `client`: a api handler shared by `web` applications
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
