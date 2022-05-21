@@ -9,6 +9,15 @@
     },
     "dev": {
       "cache": false
+    },
+    "test": {
+      "cache": false
+    },
+    "test:e2e": {
+      "cache": false
+    },
+    "aspida": {
+      "cache": false
     }
   }
 }
