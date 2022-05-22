@@ -14,7 +14,7 @@
     "@aspida/axios": "^1.10.2",
     "@cookie-gg/shared": "0.0.1",
     "axios": "^0.27.2",
-    "msw": "^0.40.2"
+    "msw": "^0.41.0"
   },
   "devDependencies": {
     "typescript": "^4.6.4"
