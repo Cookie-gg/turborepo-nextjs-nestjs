@@ -1,3 +1,3 @@
-import { client } from "client";
+import { client, mockBackend } from '@cookie-gg/client';
 
-export const backend = client(process.env.NEXT_PUBLIC_BASE_URL);
+export const backend = process.env.NODE_ENV === 'test' ? mockBackend : client(process.env.NEXT_PUBLIC_BASE_URL);

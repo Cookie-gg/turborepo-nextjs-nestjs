@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import { Button } from "ui";
-import { useUser } from "~/store/globals/user";
+import { useUsers } from "~/store/globals/user";
 
 const Page: NextPage = () => {
-  const { users } = useUser();
+  const { users } = useUsers();
 
   return (
     <>

@@ -1,3 +1,4 @@
+import { authImpl } from '~/domain/repository/auth';
 import { userImpl } from '~/domain/repository/user';
 import { httpClient } from '~/libs/httpClient';
 
@@ -6,6 +7,7 @@ export const backend = (baseURL?: string) => {
 
   return {
     user: userImpl(client),
+    auth: authImpl(client),
   };
 };
 
