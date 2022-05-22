@@ -5,7 +5,7 @@ import axios, { AxiosInstance } from "axios";
 export const client = (baseURL?: string): AxiosInstance => {
   const client = axios.create({
     withCredentials: true,
-    baseURL: baseURL || process.env.BASE_URL,
+    baseURL: baseURL || process.env.NEXT_PUBLIC_API_URL,
   });
 
   return client;

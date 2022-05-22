@@ -1,5 +1,5 @@
-import { userImpl } from "~/domain/repository/User";
-import { httpClient } from "~/libs/httpClient";
+import { userImpl } from '~/domain/repository/user';
+import { httpClient } from '~/libs/httpClient';
 
 export const backend = (baseURL?: string) => {
   const client = httpClient(baseURL);

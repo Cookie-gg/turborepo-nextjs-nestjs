@@ -1,7 +1,7 @@
 import useSWR from "swr";
-import { backend } from "~/domain/backend";
 import { swrConfig } from "~/libs/hooks";
-import { User } from "client";
+import { User } from "@cookie-gg/client";
+import { backend } from "~/libs/backend";
 
 export const useUser = () => {
   const { data: users, mutate: mutateUsers } = useSWR<User[]>(

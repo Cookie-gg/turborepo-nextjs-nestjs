@@ -1,4 +1,4 @@
 module.exports = {
   input: "src/apis",
-  openapi: { inputFile: `${process.env.API_URL}/api/json` },
+  openapi: { inputFile: `${process.env.NEXT_PUBLIC_API_URL}/api/json` },
 };

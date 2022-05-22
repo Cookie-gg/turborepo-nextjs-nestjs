@@ -8,11 +8,13 @@ export type Methods = {
   }
 
   delete: {
-    status: 200
+    status: 201
+    resBody: Types.DeleteResult
   }
 
   put: {
-    status: 200
+    status: 201
+    resBody: Types.UpdateResult
     reqBody: Types.UpdateUserInput
   }
 }

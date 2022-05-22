@@ -29,6 +29,14 @@ export type User = {
   updatedAt?: string | null | undefined
 }
 
+export type DeleteResult = {
+  /**
+   * Number of affected rows/documents
+   * Not all drivers support this
+   */
+  affected?: number | null | undefined
+}
+
 export type UpdateUserInput = {
   /** The id of user */
   uid: string
@@ -40,6 +48,19 @@ export type UpdateUserInput = {
   password: string
   /** Is Your account published? */
   published?: boolean | null | undefined
+}
+
+export type UpdateResult = {
+  /**
+   * Number of affected rows/documents
+   * Not all drivers support this
+   */
+  affected?: number | undefined
+  /**
+   * Generated values returned by a database.
+   * Has entity-like structure (not just column database name and values)
+   */
+  generatedMaps: string[]
 }
 
 export type LoginInput = {

@@ -48,13 +48,13 @@ const api = <T>({ baseURL, fetch }: AspidaClient<T>) => {
           $get: (option?: { config?: T | undefined } | undefined) =>
             fetch<Methods4['get']['resBody'], BasicHeaders, Methods4['get']['status']>(prefix, prefix1, GET, option).json().then(r => r.body),
           delete: (option?: { config?: T | undefined } | undefined) =>
-            fetch<void, BasicHeaders, Methods4['delete']['status']>(prefix, prefix1, DELETE, option).send(),
+            fetch<Methods4['delete']['resBody'], BasicHeaders, Methods4['delete']['status']>(prefix, prefix1, DELETE, option).json(),
           $delete: (option?: { config?: T | undefined } | undefined) =>
-            fetch<void, BasicHeaders, Methods4['delete']['status']>(prefix, prefix1, DELETE, option).send().then(r => r.body),
+            fetch<Methods4['delete']['resBody'], BasicHeaders, Methods4['delete']['status']>(prefix, prefix1, DELETE, option).json().then(r => r.body),
           put: (option: { body: Methods4['put']['reqBody'], config?: T | undefined }) =>
-            fetch<void, BasicHeaders, Methods4['put']['status']>(prefix, prefix1, PUT, option).send(),
+            fetch<Methods4['put']['resBody'], BasicHeaders, Methods4['put']['status']>(prefix, prefix1, PUT, option).json(),
           $put: (option: { body: Methods4['put']['reqBody'], config?: T | undefined }) =>
-            fetch<void, BasicHeaders, Methods4['put']['status']>(prefix, prefix1, PUT, option).send().then(r => r.body),
+            fetch<Methods4['put']['resBody'], BasicHeaders, Methods4['put']['status']>(prefix, prefix1, PUT, option).json().then(r => r.body),
           $path: () => `${prefix}${prefix1}`
         }
       },
