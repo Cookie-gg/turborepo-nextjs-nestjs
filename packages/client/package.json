@@ -6,8 +6,8 @@
   "license": "MIT",
   "description": "",
   "scripts": {
-    "dev": "rm -rf ./build & tsc -w & tsc-alias -w",
-    "build": "rm -rf ./build & tsc & tsc-alias",
+    "dev": "rm -rf ./dist && tsc -w && tsc-alias -w",
+    "build": "rm -rf ./dist && tsc --project ./tsconfig.build.json && tsc-alias",
     "test": "jest",
     "aspida": "rimraf ./src/apis/** && npx openapi2aspida --build"
   },

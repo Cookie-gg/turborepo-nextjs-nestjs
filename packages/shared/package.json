@@ -6,8 +6,8 @@
   "license": "MIT",
   "description": "",
   "scripts": {
-    "dev": "rm -rf ./build & tsc -w & tsc-alias -w",
-    "build": "rm -rf ./build & tsc & tsc-alias"
+    "dev": "rm -rf ./dist && tsc -w && tsc-alias -w",
+    "build": "rm -rf ./dist && tsc && tsc-alias"
   },
   "dependencies": {
     "@anatine/zod-mock": "^3.1.1",
@@ -15,7 +15,7 @@
     "@aspida/axios": "^1.10.2",
     "axios": "^0.27.2",
     "msw": "^0.41.0",
-    "zod": "^3.17.0"
+    "zod": "^3.17.2"
   },
   "devDependencies": {
     "typescript": "^4.6.4"

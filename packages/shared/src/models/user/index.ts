@@ -10,7 +10,7 @@ export const zUser = extendApi(
       minLength: 4,
       uniqueItems: true,
     }),
-    name: extendApi(z.string().nonempty(), {
+    name: extendApi(z.string(), {
       description: 'Your name',
       nullable: false,
       type: 'string',

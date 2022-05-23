@@ -10,7 +10,7 @@
     "build": "turbo run build",
     "build:apps": "turbo run build --filter=./apps/*",
     "build:packages": "turbo run build --filter=./packages/*",
-    "dev": "yarn db:start & yarn dev:apps & yarn dev:packages",
+    "dev": "yarn db:start && yarn dev:apps && yarn dev:packages",
     "dev:apps": "dotenv -e .env.development -- turbo run dev --parallel --filter=./apps/*",
     "dev:packages": "dotenv -e .env.development -- turbo run dev --parallel --filter=./packages/*",
     "db:start": "docker-compose --env-file \"./.env.development\" up -d",
